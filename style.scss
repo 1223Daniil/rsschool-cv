@@ -1,0 +1,298 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(/font/Poppins-Medium.ttf);
+}
+@mixin Title() {
+    padding: 80px 10px;
+    h2{
+        text-align: center;
+        font-size: $fontSizeTitle;
+        margin-bottom: 30px;
+        font-family: $BasicFamaly;
+    }
+    span{
+        color: rgb(145 94 255 / var(--tw-text-opacity));
+        --tw-text-opacity: 1;
+        font-family: $BasicFamaly;
+    }
+  }
+$BasicFamaly:Poppins,sans-serif;
+
+$fontSizeDescription:1.2em;
+$fontSizeTitle:4em;
+.header_container{
+    justify-content: space-between;
+    margin: 20px 0px 120px 0px;
+    display: flex;
+}
+
+.header_ul{
+    list-style-type: none;
+    display: flex;
+    gap: 35px;
+    color: white;
+    font-size: 15px;
+    font-family: $BasicFamaly;
+}
+
+body{
+    --tw-bg-opacity: 1;
+    background-color: rgb(5 8 22 / var(--tw-bg-opacity));
+
+}
+.logo{
+    font-weight: 700;
+    font-size: larger;
+    font-family: $BasicFamaly;
+}
+
+ * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        
+        scroll-behavior: smooth;
+        color-scheme: dark;
+  }
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+h1{
+    font-size: $fontSizeTitle;
+    font-family: $BasicFamaly;
+    span{
+        color: rgb(145 94 255 / var(--tw-text-opacity));
+        --tw-text-opacity: 1;
+        font-family: $BasicFamaly;
+    }
+}
+.section_greetings_description{
+    font-size: $fontSizeDescription;
+    word-spacing: 7px;
+    font-family: $BasicFamaly;
+}
+.section_greetings{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.section_greetings_image{
+    animation-name: img;
+    animation-duration: 1.1s;
+    animation-timing-function: ease;
+}
+@keyframes img {
+    0%{
+        
+        transform:translate(1000px,0px) ;
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+
+@keyframes block {
+    0%{
+        transform: translate(-1000px,0px);
+        
+    }
+    100%{
+        transform:translate(0px,0px) ;
+    }
+}
+
+.section_greetings_block{
+    animation-name: block;
+    animation-duration: 1.1s;
+    animation-timing-function: ease;
+}
+.AboutMe{
+    background-color:#120873 ;
+    
+}
+.AboutMe_bg_color{
+    @include Title()
+}
+
+
+
+
+.AboutMe_description{
+    text-align: center;
+    font-size: $fontSizeDescription;
+    font-family: $BasicFamaly;
+}
+.circle{
+    background-color: transparent;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #00ffff;
+    padding: 12px 13px;
+    display: inline-block;
+    box-shadow: 0 0 20px #00ffff;
+  
+}
+.circle:hover svg{
+    fill: white;
+}
+.circle:hover{
+    background-color: #000;
+}
+
+.Contact{
+    margin-top: 50px;
+    gap: 30px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.Grid{
+    display: grid;
+    gap: 100px;
+    grid-template-columns: 100px 100px 100px 100px;
+    align-items: center;
+    justify-content: center;
+    .grid_item{
+        font-family: $BasicFamaly;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+       svg{
+        fill: white;
+       }
+    }
+}
+
+.Skill{
+    @include Title()
+}
+.grid_item:hover {
+    svg{
+        fill:#00e6e6; 
+        transition-duration: 0.5s;
+    }
+    color: #00e6e6;
+    transition-duration:  0.5s;
+}
+
+.CodeExample{
+    @include Title();
+    pre{
+        background-color: #1f1864;
+        
+    }
+}
+
+.project{
+    @include Title();
+    h2{
+        margin-bottom: 80px;
+    }
+   
+}
+.project_Grid{
+    display: grid;
+    gap: 80px;
+    grid-template-columns: 18rem 18rem;
+    justify-content: center;
+margin-bottom: 80px;
+    .Grid_card {
+      
+        gap: 25px;
+      display: flex;
+      flex-direction: column;
+      border-radius: 20px;
+       background-color: #3c2faf;
+      padding: 15px;
+      transition: transform 0.3s ease;
+    }
+    .Grid_card:hover {
+        transform: scale(1.1);
+    }
+      
+        .Grid_card_title{
+            text-align: center;
+            font-size:$fontSizeDescription + 0.5;
+            font-family:$BasicFamaly ;
+            margin-bottom: 15px;
+         
+    }
+   .Grid_card_text{
+    font-family:$BasicFamaly ;
+    font-size: 0.9em;
+   text-align: center;
+   }
+.stack{
+    margin-top: 15px;
+    span{
+        margin-right: 10px;
+    }
+       #Vue{
+        color: rgb(26, 177, 26);
+       }
+       #NodeJS{
+        color:  rgb(44, 133, 44);
+       }
+       #MongoDB{
+        color:rgb(103, 167, 103) ;
+       }
+       #HTML{
+        color:rgb(221, 141, 65) ;
+       }
+       #CSS{
+        color:rgb(3, 57, 235) ;
+       }
+       #JavaScript{
+           color:rgb(186, 218, 44) ;
+       }
+}
+   
+}
+.footer_background{
+    background-color: #4931aa;
+    .footer_container{
+        padding: 80px 0px;
+    }
+    .footer_content{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .MyGitHub{
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        svg{
+            fill: white;
+        }
+        span{
+            font-family:$BasicFamaly;
+            
+        }
+        .ear{
+            font-family:$BasicFamaly;
+            text-align: center;
+          
+        }
+    }
+}
+   
+
+
+
+
+
+
+
+
+
+
+
+
+

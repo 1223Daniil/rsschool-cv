@@ -2,6 +2,11 @@
   font-family: "Poppins";
   src: url(/font/Poppins-Medium.ttf);
 }
+a {
+  text-decoration-line: none;
+  color: white;
+}
+
 .header_container {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -83,6 +88,13 @@ h1 span {
           animation-duration: 1.1s;
   -webkit-animation-timing-function: ease;
           animation-timing-function: ease;
+  background-color: #4806ff;
+  border-radius: 50%;
+  width: 500px;
+  height: 500px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 0, 0, 0)), to(rgba(253, 0, 0, 0))), url("./assets/745d2742-8c39-4943-8fe1-91c7cd72ce0b-PhotoRoom (4).png");
+  background-image: linear-gradient(rgba(255, 0, 0, 0), rgba(253, 0, 0, 0)), url("./assets/745d2742-8c39-4943-8fe1-91c7cd72ce0b-PhotoRoom (4).png");
+  margin-bottom: 80px;
 }
 
 @-webkit-keyframes img {
@@ -341,22 +353,22 @@ h1 span {
 .project_Grid .stack span {
   margin-right: 10px;
 }
-.project_Grid .stack #Vue {
+.project_Grid .stack .Vue {
   color: rgb(26, 177, 26);
 }
-.project_Grid .stack #NodeJS {
+.project_Grid .stack .NodeJS {
   color: rgb(44, 133, 44);
 }
-.project_Grid .stack #MongoDB {
+.project_Grid .stack .MongoDB {
   color: rgb(103, 167, 103);
 }
-.project_Grid .stack #HTML {
+.project_Grid .stack .HTML {
   color: rgb(221, 141, 65);
 }
-.project_Grid .stack #CSS {
+.project_Grid .stack .CSS {
   color: rgb(3, 57, 235);
 }
-.project_Grid .stack #JavaScript {
+.project_Grid .stack .JavaScript {
   color: rgb(186, 218, 44);
 }
 
@@ -381,10 +393,12 @@ h1 span {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   gap: 20px;
+  font-family: Poppins, sans-serif;
 }
 .footer_background .footer_content svg {
   fill: white;
@@ -395,4 +409,21 @@ h1 span {
 .footer_background .footer_content .ear {
   font-family: Poppins, sans-serif;
   text-align: center;
+}
+
+.Languages {
+  margin-top: 50px;
+  font-family: Poppins, sans-serif;
+  font-size: large;
+}
+.Languages h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.Languages ul {
+  text-align: center;
+}
+.Languages li {
+  list-style-type: none;
+  margin-bottom: 7px;
 }

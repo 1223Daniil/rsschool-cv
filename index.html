@@ -13,37 +13,46 @@
     <header class="container">
         <div class="header_container">
         <div class="logo">FullStack Web Devoloper</div>
+        <nav>
     <ul class="header_ul">
-        <li>About</li>
-        <li>Projects</li>
-        <li>Contact</li>
-        <li>Skills</li>
+        <li><a href="#About">About</a></li>
+        <li><a href="#Projects">Projects</a></li>
+        <li><a href="#Skills">Skills</a></li>
+        <li><a href="#CodeExample">Code Example</a></li>
     </ul>
+</nav>
 </div>
 </header>
 <main>
-    <section class="container">
+    <section class="container" id="greetings">
         <div class="section_greetings">
             <div class="section_greetings_block">
                 <h1 class="section_greetings_title">Hi, I'm <span>Daniil</span></h1>
                 <br>
                 <div class="section_greetings_description">presenting my portfolio</div>
             </div>
-            <div class="section_greetings_image"><img src="./assets/about.png" alt="About Me"></div>
+            <div class="section_greetings_image"></div>
         </div>
     </section>
-    <section class="AboutMe">
+    <section class="AboutMe" id="About">
 <div class="AboutMe_bg_color container">
     <h2>About <span>Me</span></h2>
     <div class="AboutMe_description">Hi, my name is Daniel I am 15 years old Junior fullStack development I live in Anapa city in Russia.So far I am studying in the 9th grade at school, and also taking two courses: RSS School and MSPS - Moscow School of Progamists.  Although I know both beckend and frontend it so happened that the preference I give to frontend development, and more specifically to website makeup. The near future plans I have: to explore some obscure topics, and after passing this course to try to get a job or try freelance a short time about my backround: I did not immediately fell in love with programming, I thought that it was not mine. But one day my older sister encouraged me to do programming, so I Googled "programming lessons". I started with C++, but it was complicated and I didn't like it. Soon I stumbled across courses on web development and started to study by myself. A year later I enrolled in RSS School courses. Eventually I fell in love with programming.</div>
+    <div class="Languages">
+        <h3>Languages</h3>
+        <ul>
+            <li>ENGLISH(A1)</li>
+            <li>RUSSIAN(freehold)</li>
+        </ul>
+    </div>
     <div class="Contact">
-        <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/></svg></div>
-        <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z"/></svg></div>
-        <div class="circle"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"/></svg></div>
+        <div class="circle"><a href="https://t.me/TEMIK1223"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/></svg></a></div>
+        <div class="circle"><a href="https://vk.com/id704701802"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M21.579 6.855c.14-.465 0-.806-.662-.806h-2.193c-.558 0-.813.295-.953.619 0 0-1.115 2.719-2.695 4.482-.51.513-.743.675-1.021.675-.139 0-.341-.162-.341-.627V6.855c0-.558-.161-.806-.626-.806H9.642c-.348 0-.558.258-.558.504 0 .528.79.65.871 2.138v3.228c0 .707-.127.836-.407.836-.743 0-2.551-2.729-3.624-5.853-.209-.607-.42-.852-.98-.852H2.752c-.627 0-.752.295-.752.619 0 .582.743 3.462 3.461 7.271 1.812 2.601 4.363 4.011 6.687 4.011 1.393 0 1.565-.313 1.565-.853v-1.966c0-.626.133-.752.574-.752.324 0 .882.164 2.183 1.417 1.486 1.486 1.732 2.153 2.567 2.153h2.192c.626 0 .939-.313.759-.931-.197-.615-.907-1.51-1.849-2.569-.512-.604-1.277-1.254-1.51-1.579-.325-.419-.231-.604 0-.976.001.001 2.672-3.761 2.95-5.04z"/></svg></a></div>
+        <div class="circle"><a href="https://wa.me/89950048204"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M18.403 5.633A8.919 8.919 0 0 0 12.053 3c-4.948 0-8.976 4.027-8.978 8.977 0 1.582.413 3.126 1.198 4.488L3 21.116l4.759-1.249a8.981 8.981 0 0 0 4.29 1.093h.004c4.947 0 8.975-4.027 8.977-8.977a8.926 8.926 0 0 0-2.627-6.35m-6.35 13.812h-.003a7.446 7.446 0 0 1-3.798-1.041l-.272-.162-2.824.741.753-2.753-.177-.282a7.448 7.448 0 0 1-1.141-3.971c.002-4.114 3.349-7.461 7.465-7.461a7.413 7.413 0 0 1 5.275 2.188 7.42 7.42 0 0 1 2.183 5.279c-.002 4.114-3.349 7.462-7.461 7.462m4.093-5.589c-.225-.113-1.327-.655-1.533-.73-.205-.075-.354-.112-.504.112s-.58.729-.711.879-.262.168-.486.056-.947-.349-1.804-1.113c-.667-.595-1.117-1.329-1.248-1.554s-.014-.346.099-.458c.101-.1.224-.262.336-.393.112-.131.149-.224.224-.374s.038-.281-.019-.393c-.056-.113-.505-1.217-.692-1.666-.181-.435-.366-.377-.504-.383a9.65 9.65 0 0 0-.429-.008.826.826 0 0 0-.599.28c-.206.225-.785.767-.785 1.871s.804 2.171.916 2.321c.112.15 1.582 2.415 3.832 3.387.536.231.954.369 1.279.473.537.171 1.026.146 1.413.089.431-.064 1.327-.542 1.514-1.066.187-.524.187-.973.131-1.067-.056-.094-.207-.151-.43-.263"/></svg></a></div>
     </div>
 </div>
-    </section>
-    <section class="Skill container">
+    </section >
+    <section class="Skill container" id="Skills">
         <h2>My <span>Skills</span></h2>
         <div class="Grid">
             <div class="grid_item"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path d="M4.136 3.012h15.729l-1.431 16.15-6.451 1.826-6.414-1.826-1.433-16.15zm5.266 7.302-.173-2.035 7.533.002.173-1.963-9.87-.002.522 5.998h6.835l-.243 2.566-2.179.602-2.214-.605-.141-1.58H7.691l.247 3.123L12 17.506l4.028-1.08.558-6.111H9.402v-.001z"/></svg>
@@ -72,8 +81,8 @@
                 <div>Git</div>
             </div>
         </div>
-    </section>
-    <section class="CodeExample container">
+    </section >
+    <section class="CodeExample container" id="CodeExample">
         <h2>Code example</h2>
         <pre data-trimmed="true">
             <code data-language="javascript">
@@ -107,60 +116,68 @@
         </pre>
         
     </section>
-    <section class="project container">
+    <section class="project container" id="Projects">
 <h2>My projects</h2>
 
 <div class="project_Grid">
-    <div class="Grid_card" style="width: 18rem;">
-        <img src="./assets/Скриншот 07-07-2023 214044.jpg" class="card-img-top" alt="..." style="border-radius:20px ;">
+    <a href="https://github.com/1223Daniil/online-store">
+      <div class="Grid_card" style="width: 18rem;" >
+        <img src="./assets/Скриншот3.jpg" class="card-img-top" alt="..." style="border-radius:20px ;">
         <div class="Grid_body">
           <h5 class="Grid_card_title">Shop Womazing</h5>
           <p class="Grid_card_text">women's clothing store Womazing where you will find dresses, t-shirts and much more.</p>
           <div class="stack">
-            <span id="Vue">#Vue</span>
-            <span id="NodeJS">#Node JS</span>
-            <span id="MongoDB">#Mongo DB</span>
-            <span id="JavaScript">#JavaScript</span>
+            <span class="Vue">#Vue</span>
+            <span class="NodeJS">#Node JS</span>
+            <span class="MongoDB">#Mongo DB</span>
+            <span class="JavaScript">#JavaScript</span>
           </div>
         </div>
       </div>
+    </a>
 
+    <a href="https://1223daniil.github.io/flowers/">
       <div class="Grid_card" style="width: 18rem;">
-        <img src="./assets/Скриншот 07-07-2023 230351.jpg" class="card-img-top" alt="..." style="border-radius:20px ;">
+        <img src="./assets/Скриншот4.jpg" class="card-img-top" alt="..." style="border-radius:20px ;">
         <div class="Grid_body">
           <h5 class="Grid_card_title">GREENCO</h5>
           <p class="Grid_card_text">Nature's souvenir store</p>
           <div class="stack">
-            <span id="HTML">#HTML</span>
-            <span id="CSS">#CSS</span>
+            <span class="HTML">#HTML</span>
+            <span class="CSS">#CSS</span>
           </div>
         </div>
       </div>
+    </a>
 
+    <a href="https://1223daniil.github.io/shelter/shelter-main/index.html">
       <div class="Grid_card" style="width: 18rem;">
-        <img src="./assets/Скриншот 07-07-2023 205114.jpg" class="card-img-top" alt="..." style="border-radius:20px ;">
+        <img src="./assets/Скриншот1.jpg" class="card-img-top" alt="..." style="border-radius:20px ;">
         <div class="Grid_body">
           <h5 class="Grid_card_title">Shelter</h5>
           <p class="Grid_card_text">you can trust us with your pets</p>
           <div class="stack">
-            <span id="HTML">#HTML</span>
-            <span id="CSS">#CSS</span>
-            <span id="JavaScript">#JavaScript</span>
+            <span class="HTML">#HTML</span>
+            <span class="CSS">#CSS</span>
+            <span class="JavaScript">#JavaScript</span>
           </div>
         </div>
       </div>
+    </a>
 
+    <a href="https://1223daniil.github.io/minesweeper/">
       <div class="Grid_card" style="width: 18rem;">
-        <img src="./assets/Скриншот 07-07-2023 205319.jpg" class="card-img-top" alt="..." style="border-radius:20px ;">
+        <img src="./assets/Скриншот2.jpg" class="card-img-top" alt="..." style="border-radius:20px ;">
         <div class="Grid_body">
           <h5 class="Grid_card_title">Minesweeper</h5>
           <p class="Grid_card_text">minesweeper game implemented on clean JavaScript</p>
           <div class="stack">
            
-            <span id="JavaScript">#JavaScript</span>
+            <span class="JavaScript">#JavaScript</span>
           </div>
         </div>
       </div>
+    </a>
 </div>
     </section>
 
@@ -168,9 +185,17 @@
     <div class="footer_background">
         <div class="footer_container container">
             <div class="footer_content">
-                <div class="MyGitHub"><span>My GitHub</span><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/></svg></div>
+                <div class="MyGitHub">
+                    <span> +7-995-004-82-04</span>
+                    <a href="https://github.com/1223Daniil">
+                        <div style="display: flex; align-items: center; gap: 15px;">
+                            <span>My GitHub</span><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.026 2c-5.509 0-9.974 4.465-9.974 9.974 0 4.406 2.857 8.145 6.821 9.465.499.09.679-.217.679-.481 0-.237-.008-.865-.011-1.696-2.775.602-3.361-1.338-3.361-1.338-.452-1.152-1.107-1.459-1.107-1.459-.905-.619.069-.605.069-.605 1.002.07 1.527 1.028 1.527 1.028.89 1.524 2.336 1.084 2.902.829.091-.645.351-1.085.635-1.334-2.214-.251-4.542-1.107-4.542-4.93 0-1.087.389-1.979 1.024-2.675-.101-.253-.446-1.268.099-2.64 0 0 .837-.269 2.742 1.021a9.582 9.582 0 0 1 2.496-.336 9.554 9.554 0 0 1 2.496.336c1.906-1.291 2.742-1.021 2.742-1.021.545 1.372.203 2.387.099 2.64.64.696 1.024 1.587 1.024 2.675 0 3.833-2.33 4.675-4.552 4.922.355.308.675.916.675 1.846 0 1.334-.012 2.41-.012 2.737 0 .267.178.577.687.479C19.146 20.115 22 16.379 22 11.974 22 6.465 17.535 2 12.026 2z"/></svg>
+                        </div>
+                    </a>
+                   
+                </div>
                 <p class="ear">© 2023</p>
-                <img src="./assets/rsschool.svg">
+                <a href="https://rs.school/js/"><img src="./assets/rsschool.svg" alt="rsschool"></a>
             </div>
         </div>
     </div>
